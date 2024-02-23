@@ -1,0 +1,81 @@
+{
+  "version": 4,
+  "terraform_version": "1.6.6",
+  "serial": 3,
+  "lineage": "d7c0d1d9-2905-d6dc-18f7-87ba6170e9f3",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.org-policy[\"constraints/iam.workloadIdentityPoolAwsAccounts\"]",
+      "mode": "managed",
+      "type": "google_folder_organization_policy",
+      "name": "folder_policy_list_deny_all",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "status": "tainted",
+          "schema_version": 0,
+          "attributes": {
+            "boolean_policy": [],
+            "constraint": "constraints/iam.workloadIdentityPoolAwsAccounts",
+            "etag": null,
+            "folder": "321805502",
+            "id": "321805502/constraints/iam.workloadIdentityPoolAwsAccounts",
+            "list_policy": [
+              {
+                "allow": [],
+                "deny": [
+                  {
+                    "all": true,
+                    "values": null
+                  }
+                ],
+                "inherit_from_parent": false,
+                "suggested_value": ""
+              }
+            ],
+            "restore_policy": [],
+            "timeouts": null,
+            "update_time": null,
+            "version": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNDAwMDAwMDAwMDAsImRlbGV0ZSI6MjQwMDAwMDAwMDAwLCJyZWFkIjoyNDAwMDAwMDAwMDAsInVwZGF0ZSI6MjQwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "module": "module.org-policy[\"constraints/iam.workloadIdentityPoolAwsAccounts\"]",
+      "mode": "managed",
+      "type": "google_folder_organization_policy",
+      "name": "folder_policy_list_exclude_folders",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": "folders/1043307916975",
+          "schema_version": 0,
+          "attributes": {
+            "boolean_policy": [],
+            "constraint": "constraints/iam.workloadIdentityPoolAwsAccounts",
+            "etag": "CIWt3a0GEICGzNoD",
+            "folder": "folders/1043307916975",
+            "id": "folders/1043307916975/constraints/iam.workloadIdentityPoolAwsAccounts",
+            "list_policy": [],
+            "restore_policy": [
+              {
+                "default": true
+              }
+            ],
+            "timeouts": null,
+            "update_time": "2024-01-29T07:40:53.995296Z",
+            "version": 0
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNDAwMDAwMDAwMDAsImRlbGV0ZSI6MjQwMDAwMDAwMDAwLCJyZWFkIjoyNDAwMDAwMDAwMDAsInVwZGF0ZSI6MjQwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
